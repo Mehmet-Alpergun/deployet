@@ -363,7 +363,7 @@ async function openModal(item: Product): Promise<void> {
     document.body.style.overflow = "hidden";
     modalTitle!.textContent = data.name;
     modalDesc!.textContent = data.description;
-    modalImg!.src = `../images/${data.name}.svg`;
+    modalImg!.src = `./images/${data.name}.svg`;
 
     //sizes
     kucukisim!.textContent = data.sizes.s.size;
