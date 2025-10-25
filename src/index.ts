@@ -169,7 +169,7 @@ function showSlide(index: number): void {
 
   const slideImg: HTMLImageElement = document.createElement("img");
   slideImg.classList.add("yeniresim");
-  slideImg.src = `/images/${item.name}.svg`;
+  slideImg.src = `./images/${item.name}.svg`;
   slideImg.alt = item.name;
   slider.appendChild(slideImg);
 
@@ -262,7 +262,7 @@ function startAutoSlide(): void {
   interval = window.setInterval(() => {
     currentIndex = (currentIndex + 1) % slidesData.length;
     showSlide(currentIndex);
-  }, 5000);
+  }, 5000000000000);
 }
 
 function resetInterval(): void {
